@@ -1,0 +1,133 @@
+$font-sizes: (
+    1: 8rem,
+    2: 4rem,
+    3: 2rem,
+    4: 2rem,
+    5: 1.5rem,
+    6: 1.25rem,
+);
+
+$primary: #5ba4cf;
+$secondary: #2d3561;
+$success: #5ba4cf;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+p {
+    margin: 0;
+}
+
+.navbar {
+    --bs-navbar-active-color: var(--bs-primary);
+    --bs-navbar-hover-color: var(--bs-primary);
+    box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.2);
+}
+
+#about,
+#gallery,
+#reviews,
+#contacts {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+}
+
+#home {
+    background-image: url(../images/u4555836278_hyper_realistic_photo_of_modern_art_gallery_with__99dfdd30-9dad-47e7-9f21-43c040fba686_2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    min-height: calc(100vh - 106px);
+}
+
+.btn-primary {
+    --bs-btn-color: white;
+    --bs-btn-hover-color: white;
+    --bs-btn-active-color: white;
+    --bs-btn-disabled-color: white;
+}
+
+.btn-primary {
+    background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+    border: none;
+    background-size: 200% 200%;
+    background-position: 0% 50%;
+    transition:
+        background-position 0.5s ease,
+        background-size 0.5s ease;
+}
+
+.btn-primary:hover {
+    background-position: 100% 50%;
+    background-size: 200% 200%;
+}
+
+.btn-success {
+    --bs-btn-color: white;
+    --bs-btn-hover-color: white;
+    --bs-btn-active-color: white;
+    --bs-btn-disabled-color: white;
+}
+
+.custom-justify {
+    text-align: justify;
+}
+
+.card {
+    background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+    background-size: 350% 350%;
+    transition:
+        background-position 0.5s ease,
+        background-size 0.5s ease;
+    min-height: 210px;
+}
+
+.card-1 {
+    background-position: 0% 50%;
+}
+
+.card-2 {
+    background-position: 30% 50%;
+}
+
+.card-3 {
+    background-position: 60% 50%;
+}
+
+.card-4 {
+    background-position: 90% 50%;
+}
+
+.card-1:hover {
+    background-size: 200% 200%;
+    background-position: 30% 50%;
+}
+
+.card-2:hover {
+    background-size: 200% 200%;
+    background-position: 60% 50%;
+}
+
+.card-3:hover {
+    background-size: 200% 200%;
+    background-position: 90% 50%;
+}
+
+.card-4:hover {
+    background-size: 200% 200%;
+    background-position: 100% 50%;
+}
+
+#contacts {
+    background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+}
+
+@media (max-width: 992px) {
+    .navbar-nav {
+        align-items: center;
+
+        .nav-item {
+            text-align: center;
+        }
+    }
+}

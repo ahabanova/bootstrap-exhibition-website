@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Silent Silhouettes</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+        <link rel="stylesheet" href="scss/custom.css" />
+    </head>
+    <body data-bs-spy="scroll" data-bs-target="#nav">
+        <div class="sticky-top">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary py-2" id="nav">
+                <div class="container-fluid px-5">
+                    <a class="navbar-brand" href="#">
+                        <img
+                            src="images/logo.png"
+                            alt="logo"
+                            width="80"
+                            height="80"
+                        />
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto gap-4">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active fs-5"
+                                    aria-current="page"
+                                    href="#"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-5" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-5" href="#gallery"
+                                    >Gallery</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-5" href="#reviews"
+                                    >Reviews</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-5" href="#contacts"
+                                    >Contacts</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <section
+            class="container-fluid px-5 d-flex flex-column justify-content-between"
+            id="home"
+        >
+            <div class="row">
+                <div class="column-12">
+                    <h1 class="fs-1">Silent Silhouettes</h1>
+                    <h2 class="fs-2">White Space Gallery</h2>
+                </div>
+            </div>
+            <div class="row my-5">
+                <div class="container">
+                    <!-- Button trigger modal -->
+                    <button
+                        type="button"
+                        class="btn btn-primary fs-3 px-4 py-3"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                    >
+                        Book your tickets
+                    </button>
+
+                    <!-- Modal -->
+                    <div
+                        class="modal fade"
+                        id="exampleModal"
+                        tabindex="-1"
+                        aria-labelledby="exampleModalLabel"
+                        aria-hidden="true"
+                    >
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1
+                                        class="modal-title fs-5"
+                                        id="exampleModalLabel"
+                                    >
+                                        Book your tickets
+                                    </h1>
+                                    <button
+                                        type="button"
+                                        class="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"
+                                    ></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="">
+                                        <div class="row">
+                                            <!-- Datum -->
+                                            <div class="col-md-6">
+                                                <div class="form-floating mb-3">
+                                                    <input
+                                                        type="date"
+                                                        class="form-control"
+                                                        id="dateInput"
+                                                        required
+                                                    />
+                                                    <label for="dateInput"
+                                                        ><span
+                                                            class="text-danger"
+                                                            >*</span
+                                                        >
+                                                        Date</label
+                                                    >
+                                                </div>
+                                            </div>
+
+                                            <!-- Počet vstupenek -->
+                                            <div class="col-md-6">
+                                                <div class="form-floating mb-3">
+                                                    <select
+                                                        class="form-select"
+                                                        id="ticketsInput"
+                                                        required
+                                                    >
+                                                        <option value="1">
+                                                            1
+                                                        </option>
+                                                        <option value="2">
+                                                            2
+                                                        </option>
+                                                        <option value="3">
+                                                            3
+                                                        </option>
+                                                        <option value="4">
+                                                            4
+                                                        </option>
+                                                        <option value="5">
+                                                            5
+                                                        </option>
+                                                        <option value="6">
+                                                            6
+                                                        </option>
+                                                    </select>
+                                                    <label for="ticketsInput"
+                                                        ><span
+                                                            class="text-danger"
+                                                            >*</span
+                                                        >
+                                                        Number of tickets</label
+                                                    >
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Jméno -->
+                                        <div class="form-floating mb-3">
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                id="nameInput"
+                                                placeholder="Jane Doe"
+                                                required
+                                            />
+                                            <label for="nameInput"
+                                                ><span class="text-danger"
+                                                    >*</span
+                                                >
+                                                Name</label
+                                            >
+                                        </div>
+
+                                        <!-- Email -->
+                                        <div class="form-floating mb-3">
+                                            <input
+                                                type="email"
+                                                class="form-control"
+                                                id="emailInput"
+                                                placeholder="name@email.com"
+                                                required
+                                            />
+                                            <label for="emailInput"
+                                                ><span class="text-danger"
+                                                    >*</span
+                                                >
+                                                Email</label
+                                            >
+                                        </div>
+
+                                        <!-- Telefon -->
+                                        <div class="form-floating mb-3">
+                                            <input
+                                                type="tel"
+                                                class="form-control"
+                                                id="phoneInput"
+                                                placeholder="+420123456789"
+                                            />
+                                            <label for="phoneInput"
+                                                >Phone</label
+                                            >
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button
+                                        type="button"
+                                        class="btn btn-outline-secondary btn-lg"
+                                        data-bs-dismiss="modal"
+                                    >
+                                        Close
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn btn-success btn-lg"
+                                    >
+                                        Book tickets
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <main class="container" id="about">
+            <div class="row row-cols-1 row-cols-md-1 row-cols-lg-3 g-5">
+                <div class="col">
+                    <h3 class="fs-3">White Space Gallery</h3>
+                    <img
+                        src="images/gallery-building.png"
+                        class="img-fluid py-3"
+                        alt="gallery building"
+                    />
+                    <p class="custom-justify">
+                        White Space Gallery is a contemporary art space
+                        dedicated to showcasing emerging and established artists
+                        who challenge conventional perspectives. Our minimalist
+                        environment allows artworks to breathe and speak for
+                        themselves, creating an intimate dialogue between the
+                        viewer and the art. Located in the heart of Brno, we
+                        provide a sanctuary for contemplation and artistic
+                        discovery.
+                    </p>
+                </div>
+                <div class="col">
+                    <h3 class="fs-3">Evelyn Moreau</h3>
+                    <img
+                        src="images/evelyn-moreau.png"
+                        class="img-fluid py-3"
+                        alt="Evelyn Moreau"
+                    />
+                    <p class="custom-justify">
+                        Evelyn Moreau is a French contemporary artist known for
+                        her haunting abstract compositions that explore themes
+                        of memory, solitude, and the human condition. Working
+                        primarily with dark, muted palettes punctuated by
+                        ethereal light, Moreau creates atmospheric paintings
+                        that exist between figuration and abstraction. Her works
+                        invite viewers to project their own emotions and
+                        experiences onto the canvas, making each encounter
+                        deeply personal.
+                    </p>
+                </div>
+                <div class="col">
+                    <h3 class="fs-3">Silent Silhouettes</h3>
+                    <img
+                        src="images/u4555836278_abstract_painting_dark_of_Silent_Silhouettes_--ar_3f61208f-afe6-41d4-bc84-d14d4014d4be_1.png"
+                        class="img-fluid py-3"
+                        alt="..."
+                    />
+                    <p class="custom-justify">
+                        "Silent Silhouettes" is Moreau's most ambitious
+                        exhibition to date, featuring 15 large-scale paintings
+                        that blur the boundaries between presence and absence.
+                        The series depicts shadowy figures in contemplative
+                        spaces, exploring themes of isolation in modern society
+                        and the quiet moments of introspection we all
+                        experience. Each painting serves as a mirror, reflecting
+                        not what we see, but what we feel when confronted with
+                        our own solitude.
+                    </p>
+                </div>
+            </div>
+        </main>
+        <hr />
+        <section class="container" id="gallery">
+            <div class="row">
+                <div class="col">
+                    <h3 class="fs-3 mb-4">Gallery</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div
+                        id="carouselExample"
+                        class="carousel slide"
+                        data-bs-touch="true"
+                    >
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img
+                                    src="images/u4555836278_abstract_painting_dark_of_Silent_Silhouettes_--ar_642027f9-9dd3-449d-912e-f792662a7c9e_3.png"
+                                    class="d-block w-100"
+                                    alt="..."
+                                />
+                            </div>
+                            <div class="carousel-item">
+                                <img
+                                    src="images/u4555836278_abstract_painting_dark_of_Silent_Silhouettes_--ar_3f61208f-afe6-41d4-bc84-d14d4014d4be_2.png"
+                                    class="d-block w-100"
+                                    alt="..."
+                                />
+                            </div>
+                            <div class="carousel-item">
+                                <img
+                                    src="images/u4555836278_dark_abstract_painting_of_Silent_Silhouettes_--ar_f8428d4a-2488-425b-934d-6a24f4520320_2.png"
+                                    class="d-block w-100"
+                                    alt="..."
+                                />
+                            </div>
+                            <div class="carousel-item">
+                                <img
+                                    src="images/u4555836278_darkabstract_painting_of_Silent_Silhouettes_--ar__e86920cc-b0c2-4347-b2a7-f294d52f593a_0.png"
+                                    class="d-block w-100"
+                                    alt="..."
+                                />
+                            </div>
+                        </div>
+                        <button
+                            class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#carouselExample"
+                            data-bs-slide="prev"
+                        >
+                            <span
+                                class="carousel-control-prev-icon"
+                                aria-hidden="true"
+                            ></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                            class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#carouselExample"
+                            data-bs-slide="next"
+                        >
+                            <span
+                                class="carousel-control-next-icon"
+                                aria-hidden="true"
+                            ></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr />
+        <section class="container" id="reviews">
+            <div class="row">
+                <div class="col">
+                    <h3 class="fs-3 mb-4">Reviews</h3>
+                </div>
+            </div>
+            <div class="row row row-cols-1 row-cols-lg-2 row-cols-xl-4 g-5">
+                <div class="col">
+                    <div class="card border-primary mb-3 h-100 shadow card-1">
+                        <div class="card-body text-white">
+                            <figure
+                                class="d-flex flex-column justify-content-between h-100"
+                            >
+                                <blockquote class="blockquote">
+                                    <p>
+                                        "Silent Silhouettes is incredibly
+                                        emotional. Evelyn Moreau’s paintings
+                                        blur the line between reality and dream.
+                                        Hauntingly beautiful!"
+                                    </p>
+                                </blockquote>
+                                <figcaption
+                                    class="blockquote-footer text-white"
+                                >
+                                    Sophie, 28
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-primary mb-3 h-100 shadow card-2">
+                        <div class="card-body text-white">
+                            <figure
+                                class="d-flex flex-column justify-content-between h-100"
+                            >
+                                <blockquote class="blockquote">
+                                    <p>
+                                        "I've never seen art capture solitude so
+                                        beautifully. Each painting evoked a
+                                        different emotion—unforgettable!"
+                                    </p>
+                                </blockquote>
+                                <figcaption
+                                    class="blockquote-footer text-white"
+                                >
+                                    Daniel, 42
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-primary mb-3 h-100 shadow card-3">
+                        <div class="card-body text-white">
+                            <figure
+                                class="d-flex flex-column justify-content-between h-100"
+                            >
+                                <blockquote class="blockquote">
+                                    <p>
+                                        "Moreau’s work has incredible depth.
+                                        Abstract yet full of hidden stories.
+                                        Perfectly exhibited at White Space
+                                        Gallery!"
+                                    </p>
+                                </blockquote>
+                                <figcaption
+                                    class="blockquote-footer text-white"
+                                >
+                                    Emma, 35
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-primary mb-3 h-100 shadow card-4">
+                        <div class="card-body text-white">
+                            <figure
+                                class="d-flex flex-column justify-content-between h-100"
+                            >
+                                <blockquote class="blockquote">
+                                    <p>
+                                        "Minimal yet powerful. Moreau
+                                        masterfully plays with contrast and
+                                        ambiguity. A deeply moving exhibition."
+                                    </p>
+                                </blockquote>
+                                <figcaption
+                                    class="blockquote-footer text-white"
+                                >
+                                    Michael, 50
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contacts">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col">
+                        <h3 class="fs-3 mb-4 text-white">Contacts</h3>
+                    </div>
+                </div>
+                <div class="row mb-5 g-5">
+                    <div class="col text-white">
+                        <address>
+                            White Space Gallery<br />
+                            Malinovského nám. 2<br />
+                            602 00 Brno<br />
+                            <a
+                                class="text-white"
+                                href="mailto:ahabanova95@gmal.com"
+                                >ahabanova95@gmail.com</a
+                            ><br />
+                            <a class="text-white" href="tel:+420123456789"
+                                >+420123456789</a
+                            >
+                        </address>
+                    </div>
+                    <div class="col-3">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.2223667632256!2d16.612071276891438!3d49.19634107686393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4712945839db2301%3A0xaa671e9e84877f0b!2zRMWvbSB1bcSbbsOtIG3Em3N0YSBCcm5h!5e0!3m2!1scs!2scz!4v1739548734321!5m2!1scs!2scz"
+                            width="100%"
+                            height="300"
+                            style="border: 0"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                    </div>
+                    <div class="col-md-12 col-lg-6">
+                        <form action="">
+                            <!-- Jméno -->
+                            <div class="form-floating mb-3">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="nameInput"
+                                    placeholder="Jane Doe"
+                                    required
+                                />
+                                <label for="nameInput"
+                                    ><span class="text-danger">*</span>
+                                    Name</label
+                                >
+                            </div>
+                            <!-- Email -->
+                            <div class="form-floating mb-3">
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="emailInput"
+                                    placeholder="name@email.com"
+                                    required
+                                />
+                                <label for="emailInput"
+                                    ><span class="text-danger">*</span>
+                                    Email</label
+                                >
+                            </div>
+                            <!-- Zpráva -->
+                            <div class="form-floating mb-3">
+                                <textarea
+                                    class="form-control"
+                                    placeholder="Message"
+                                    id="floatingTextarea2"
+                                    style="height: 150px"
+                                    required
+                                ></textarea>
+                                <label for="floatingTextarea2"
+                                    ><span class="text-danger">*</span>
+                                    Message</label
+                                >
+                            </div>
+                            <div class="text-end">
+                                <button
+                                    type="submit"
+                                    class="btn btn-success px-5"
+                                >
+                                    Submit
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Bootstrap JS -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
