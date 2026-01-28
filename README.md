@@ -1,6 +1,6 @@
 # Bootstrap Exercise - Exhibition Website "Silent Silhouettes"
 
-A project created as Exercise in the **Programování www aplikací – VŠB TU Ostrva** course - Bootstrap module.
+A project created as Exercise in the **Programování www aplikací – VŠB TU Ostrava** course - Bootstrap module.
 
 ## 📋 Assignment
 
