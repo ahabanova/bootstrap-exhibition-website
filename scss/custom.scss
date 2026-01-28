@@ -73,6 +73,25 @@ p {
     text-align: justify;
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+
+    &:hover .carousel-control-prev-icon,
+    &:hover .carousel-control-next-icon {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+}
+
 .card {
     background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
     background-size: 350% 350%;

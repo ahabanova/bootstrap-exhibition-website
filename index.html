@@ -6,6 +6,10 @@
         <title>Silent Silhouettes</title>
         <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
         <link rel="stylesheet" href="scss/custom.css" />
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css"
+            rel="stylesheet"
+        />
     </head>
     <body data-bs-spy="scroll" data-bs-target="#nav">
         <div class="sticky-top">
@@ -312,36 +316,64 @@
                     <div
                         id="carouselExample"
                         class="carousel slide"
+                        data-bs-ride="carousel"
                         data-bs-touch="true"
                     >
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img
-                                    src="images/u4555836278_abstract_painting_dark_of_Silent_Silhouettes_--ar_642027f9-9dd3-449d-912e-f792662a7c9e_3.png"
-                                    class="d-block w-100"
-                                    alt="..."
-                                />
+                                <a
+                                    href="images/u4555836278_abstract_painting_dark_of_Silent_Silhouettes_--ar_642027f9-9dd3-449d-912e-f792662a7c9e_3.png"
+                                    data-lightbox="gallery"
+                                    data-title="Silent Silhouettes - Piece 1"
+                                >
+                                    <img
+                                        src="images/u4555836278_abstract_painting_dark_of_Silent_Silhouettes_--ar_642027f9-9dd3-449d-912e-f792662a7c9e_3.png"
+                                        class="d-block w-100"
+                                        alt="..."
+                                    />
+                                </a>
                             </div>
+
                             <div class="carousel-item">
-                                <img
-                                    src="images/u4555836278_abstract_painting_dark_of_Silent_Silhouettes_--ar_3f61208f-afe6-41d4-bc84-d14d4014d4be_2.png"
-                                    class="d-block w-100"
-                                    alt="..."
-                                />
+                                <a
+                                    href="images/u4555836278_abstract_painting_dark_of_Silent_Silhouettes_--ar_3f61208f-afe6-41d4-bc84-d14d4014d4be_2.png"
+                                    data-lightbox="gallery"
+                                    data-title="Silent Silhouettes - Piece 2"
+                                >
+                                    <img
+                                        src="images/u4555836278_abstract_painting_dark_of_Silent_Silhouettes_--ar_3f61208f-afe6-41d4-bc84-d14d4014d4be_2.png"
+                                        class="d-block w-100"
+                                        alt="..."
+                                    />
+                                </a>
                             </div>
+
                             <div class="carousel-item">
-                                <img
-                                    src="images/u4555836278_dark_abstract_painting_of_Silent_Silhouettes_--ar_f8428d4a-2488-425b-934d-6a24f4520320_2.png"
-                                    class="d-block w-100"
-                                    alt="..."
-                                />
+                                <a
+                                    href="images/u4555836278_dark_abstract_painting_of_Silent_Silhouettes_--ar_f8428d4a-2488-425b-934d-6a24f4520320_2.png"
+                                    data-lightbox="gallery"
+                                    data-title="Silent Silhouettes - Piece 3"
+                                >
+                                    <img
+                                        src="images/u4555836278_dark_abstract_painting_of_Silent_Silhouettes_--ar_f8428d4a-2488-425b-934d-6a24f4520320_2.png"
+                                        class="d-block w-100"
+                                        alt="..."
+                                    />
+                                </a>
                             </div>
+
                             <div class="carousel-item">
-                                <img
-                                    src="images/u4555836278_darkabstract_painting_of_Silent_Silhouettes_--ar__e86920cc-b0c2-4347-b2a7-f294d52f593a_0.png"
-                                    class="d-block w-100"
-                                    alt="..."
-                                />
+                                <a
+                                    href="images/u4555836278_darkabstract_painting_of_Silent_Silhouettes_--ar__e86920cc-b0c2-4347-b2a7-f294d52f593a_0.png"
+                                    data-lightbox="gallery"
+                                    data-title="Silent Silhouettes - Piece 4"
+                                >
+                                    <img
+                                        src="images/u4555836278_darkabstract_painting_of_Silent_Silhouettes_--ar__e86920cc-b0c2-4347-b2a7-f294d52f593a_0.png"
+                                        class="d-block w-100"
+                                        alt="..."
+                                    />
+                                </a>
                             </div>
                         </div>
                         <button
@@ -481,7 +513,7 @@
                 </div>
                 <div class="row mb-5 g-5">
                     <div class="col text-white">
-                        <address>
+                        <address class="lh-lg">
                             White Space Gallery<br />
                             Malinovského nám. 2<br />
                             602 00 Brno<br />
@@ -508,7 +540,6 @@
                     </div>
                     <div class="col-md-12 col-lg-6">
                         <form action="">
-                            <!-- Jméno -->
                             <div class="form-floating mb-3">
                                 <input
                                     type="text"
@@ -522,7 +553,6 @@
                                     Name</label
                                 >
                             </div>
-                            <!-- Email -->
                             <div class="form-floating mb-3">
                                 <input
                                     type="email"
@@ -536,7 +566,6 @@
                                     Email</label
                                 >
                             </div>
-                            <!-- Zpráva -->
                             <div class="form-floating mb-3">
                                 <textarea
                                     class="form-control"
@@ -563,7 +592,8 @@
                 </div>
             </div>
         </section>
-        <!-- Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
