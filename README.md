@@ -24,7 +24,8 @@ Create a responsive website for a fictional art exhibition using Bootstrap 5 fra
 - **HTML5**
 - **CSS3 / SCSS** (Bootstrap customization)
 - **Bootstrap 5.3.3**
-- **JavaScript** (Bootstrap components + validation)
+- **JavaScript** (Bootstrap components)
+- **Lightbox2** - for gallery
 - **Google Fonts**
 
 ## 🌐 Live Demo
