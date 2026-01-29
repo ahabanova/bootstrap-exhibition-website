@@ -30,7 +30,7 @@ Create a responsive website for a fictional art exhibition using Bootstrap 5 fra
 
 ## 🌐 Live Demo
 
-View the live site: [https://helpful-bonbon-4f06c4.netlify.app/](https://helpful-bonbon-4f06c4.netlify.app/)
+View the live site: [https://silent-silhouettes.netlify.app/](https://silent-silhouettes.netlify.app/)
 
 
 Created as part of Web Application Development course in 2025.
