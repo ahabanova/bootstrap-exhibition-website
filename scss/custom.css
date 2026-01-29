@@ -11967,6 +11967,12 @@ p {
   background-position: 100% 50%;
 }
 
+.lb-nav,
+.lb-prev,
+.lb-next {
+  display: none !important;
+}
+
 @media (max-width: 992px) {
   .navbar-nav {
     align-items: center;
